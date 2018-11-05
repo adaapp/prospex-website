@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission-statement {
+    background-image: url(https://images.pexels.com/photos/875858/pexels-photo-875858.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    text-align: center;
+    padding: 10vh;
+    color: aliceblue;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 2vh;
+    background-color: rgb(0, 0, 0, 0.5)
+}

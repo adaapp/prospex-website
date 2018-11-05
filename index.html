@@ -7,26 +7,28 @@
     <title>Page Title</title>
     <script type="text/javascript" src="http://livejs.com/live.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
     <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid navbar">
         <h1>Prospex</h1>
         <nav>
-            <ul>
-                <li>
+            <ul class="nav">
+                <li class="nav-link active">
                     <a href="programme.html" title="Our programmes">
                         Programmes
                     </a>
                 </li>
-                <li>
+                <li class="nav-link active">
                     <a href="donate.html" title="Donate">
                         Donate
                     </a>
                 </li>
-                <li>
+                <li class="nav-link active">
                     <a href="blog.html" title="Read our Blog">
                         Blog
                     </a>
@@ -34,17 +36,47 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <hr />
+    <main class="container-fluid">
+        <section id="mission-statement" class="mission-statement">
+            <h1>We are Prospex</h1>
+            <hr />
+            <p>In Islington, almost half of the children live in property. Will you help us change this?</p>
+        </section>
         <section id="programmes">
+            <h1>Programmes</h1>
             <ul>
                 <li>
                     <a href="programmes.html" title="Prospex Street Teams">
                         <h2>Street Teams</h2>
                     </a>
                 </li>
+                <li>
+                    <a href="programmes.html" title="Youth Club">
+                        <h2>Youth Club</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="programmes.html" title="1-2-1 Programmes">
+                        <h2>1-2-1 Programmes</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="programmes.html" title="Summer Programme">
+                        <h2>Summer Programme</h2>
+                    </a>
+                </li>
             </ul>
         </section>
+
     </main>
+    <footer class="container-fluid footer">
+        <h3>Donate Now</h3>
+        <p>Without your support Prospex wouldn't be able to deliver on their promises</p>
+        <a class="btn btn-primary" href="#fundraising">
+            Donate Now
+        </a>
+    </footer>
 </body>
 
 </html>
