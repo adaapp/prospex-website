@@ -1,0 +1,50 @@
+.Prospex{
+  color:orange;
+  font-size: 30px;
+}
+.Prospex:hover{
+    text-decoration: none;
+    color: orange;
+}
+/*Donate Widget CSS*/
+.page {
+  position: relative;
+  display: block;
+  width: 100% padding:20px;
+  margin: 0;
+  height: 100vh;
+  padding: 60px 20px 20px;
+  border-bottom: 2px solid #9fa8a3;
+}
+
+.donate-widget  {
+  position:fixed;
+  top: calc(50%-1.75rem);
+  right:0;
+  z-index:10;
+
+}
+
+.donate-widget a {
+  right:0;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding:1rem;
+  background:#000000;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.donate-widget a:hover {
+  text-decoration: none;
+  background: rgba(50,50,50,0.7);
+}
+h1{
+  font-family: 'Nunito', sans-serif;
+  font-weight:200;
+}
+p{
+  font-family: 'Nunito', sans-serif;
+  font-weight:200;
+
+}
