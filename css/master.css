@@ -1,0 +1,22 @@
+.donate-widget {
+ position: fixed;
+ top: calc(50% - 1.75rem);
+ right:0;
+
+}
+
+.donate-widget a {
+ color: white;
+ font-size: 1.5rem;
+ line-height: 1;
+ padding: 1rem;
+ background: rgba(0,0,0,.7);
+ border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.donate-widget a:hover {
+ text-decoration: none;
+ color: white;
+ background: rgba(50,50,50,0.7);
+
+}
