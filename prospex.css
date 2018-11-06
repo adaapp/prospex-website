@@ -2,33 +2,45 @@ html{zoom:100%}
 
 a{style: none;}
 
-h2{padding-top: 55px;}
+h2{padding-top: 40px; line-height: 6rem;}
 
-body{background-color: #f4b942;font-family: Arial ;margin: 0px;padding: 0px;border: 0px;}
+body{background-color: #f4b942;font-family: Raleway ;margin: 0px;padding: 0px;border: 0px;}
 
-section{height: calc(100vh - 0.2rem );width: 100%;padding-right: 30px;}
+section{height: calc(100vh - 1rem );width: 100%;padding-right: 14rem;}
 
-#logo-nav{background-color: white;top: 0px;left: 0px;position: fixed;width: 100%;height: 3.5rem;padding-left: 1rem;}
+.navigation-box{position: fixed;top: 3.5rem; height: 60vh;width: 15%; right: 0vh;background-color: rgba(0,0,0,.65); padding-top: 2rem; padding-left: 1rem; color: white; transition: all 1s ease;}
 
-.donate-widget{top: calc(50% - 4rem);right: 0;background-color: rgba(0,0,0,.65);height: 4rem;width: 12rem;position: fixed;display: inline;border-radius: 7.5% 0 0 7.5%;text-align: center;vertical-align: center;}
+.navigation-box.closed{position: fixed;top: 3.5rem;right: -40rem;height: 70vh;width: 15%;background-color: rgba(0,0,0,.65); padding-top: 2rem; padding-left: 1rem; color: white;}
 
-.donate-widget a{font-size: 1.5rem;line-height: 4rem;}
+.navigation-box.open{position: fixed;top: 3.5rem;right: 0vh;height: 60vh;width: 15%;background-color: rgba(0,0,0,.65); padding-top: 2rem; padding-left: 1rem; color: white;}
 
-#section-nav{margin-top: 6rem;height: calc(100vh - 7rem - 8rem);width: 100%;text-align: center; padding-right: 0px;}
+.navigation-box-toggle{margin-top: .5rem; margin-right: 0.25rem; padding: 0.5rem;font-size:1rem; right: 1rem; position:fixed; border-style: solid;}
+
+#logo-nav{background-color: white;top: 0px;left: 0px;position: fixed;width: 100%;height: 3.5rem;padding-left: 1rem; z-index: 10;}
+
+.donate-widget{top: calc(88% - 6rem);right: 0;background-color: rgba(0,0,0,.65);height: 3.5rem;width: 15%;position: fixed;display: inline;border-radius: 0 0 0 0; text-align: center;vertical-align: center; z-index: 10;}
+
+.donate-widget a{text-decoration: none;font-size: 1.5rem;line-height: 4rem; color: white; padding-top:0rem;}
+
+#section-nav{margin-top: 6rem;height: calc(100vh - 8.3rem - 8rem);width: 100%;text-align: center; padding-right: 0px;}
 
 #section-nav h1{font-size: 60px;}
 
-#section-nav ul{list-style: none; text-align: center; display: flex; height: 10rem;}
+#section-nav ul{list-style: none; text-align: center; display: flex; height: 10rem; padding-top: 1rem;}
 
-#section-nav li{display: inline;  padding-right: 3rem; padding-left: 3rem; border-right: solid;}
+#section-nav li{display: inline;  padding-right: 3rem; padding-left: 3rem; padding-top: 1rem; border-right: solid;}
 
-#bottom-nav{height: 3.5rem;padding-top: 0.8rem;background-color: #f49242;}
+#section-nav a{text-decoration: none; color: white; font-size: 1.5rem;}
 
- #bottom-nav ul{  list-style: none; text-align: center;}
+.fundraising-item{border-right: none;}
+
+#bottom-nav{height: 3.5rem;padding-top: 0.8rem;background-color: #f49242; padding-right: 0rem;}
+
+ #bottom-nav ul{list-style: none; text-align: center;}
 
  #bottom-nav li{font-size: 1.2rem;  padding-left: 5rem;  padding-right: 5rem; text-align: center; display: inline;}
 
-#who-we-are{background-color: rgb(252, 200, 0);padding-left: 30px;}
+#who-we-are{background-color: rgb(252, 200, 0);padding-left: 30px; margin-right:40rem;}
 
 #programmes{background-color: rgb(252, 189, 0);padding-left: 30px;}
 
@@ -36,6 +48,14 @@ section{height: calc(100vh - 0.2rem );width: 100%;padding-right: 30px;}
 
 #fundraising{background-color: rgb(252, 154, 0);padding-left: 30px;}
 
-#footer{  height: 8rem;  width: 100%; background-color: white;  margin: 0px;  border: 0px;  position: fixed;  display: inline-block;  vertical-align: bottom;  top: calc(100vh - 6.1rem);  text-align: center;}
+#footer{height: 8rem;  width: 100%; background-color: white;  margin: 0px;  border: 0px;  position: fixed;  display: inline-block;  vertical-align: bottom;  top: calc(100vh - 6.1rem);  text-align: center; padding-right: 0rem;}
 
 #footer p{  padding: .75rem;  line-height: 1rem;  padding-top: 1.1rem;  font-size: 1.2rem;}
+
+.footer.closed{
+
+}
+
+.footer.open{
+
+}

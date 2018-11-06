@@ -6,39 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <Link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <Link a href="prospex.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   </head>
   <body>
     <section id="logo-nav">
-      <img src="prospex.png">
+      <img src="prospex.png" id="logo">
+      <span class="navigation-box-toggle">MENU</span>
     </section>
 
-    <section id="section-nav">
+    <div class="navigation-box closed">
+      <a> Home </a>
+      <a> Test </a>
+    </div>
+
+    <section class="section full" id="section-nav">
     <h1> WE ARE PROSPEX </h1>
+    <h3> realising young people's potential</h3>
       <ul>
         <li> <a href="#who-we-are"> Who we are </a>
-          <p> This section is on who we are </p>
+          <p> We are a youth organisation based in Islington committed to realising young people's potential. </p>
         </li>
         <li> <a href="#programmes"> Programmes </a>
-          <p> This section is on our programmes </p>
+          <p> Some of the cool programmes that we have run in 2018 and our plans for 2019. </p>
         </li>
         <li> <a href="#ethos"> Ethos </a>
-          <p> This section is on our ethods </p>
+          <p> Our values are important to us and we're sure you'll agree they're important for young people today! </p>
         </li>
-        <li> <a href="#fundraising"> Fundraising </a>
-          <p> This section is on fundraising </p>
+        <li id="fundraising-item"> <a href="#fundraising"> Fundraising </a>
+          <p> As a charity, fundraising is really important for us to continue some of the great work that we've been doing.  </p>
         </li>
       </ul>
     </section>
 
     <div class="donate-widget">
-      <a href="#fundraising" title="Donate to Prospex now"> Donate Now </a>
+      <a href="https://localgiving.org/charity/prospex/" title="Donate to Prospex now" target="_blank"> Donate Now </a>
     </div>
 
 <section id="bottom-nav">
   <ul>
-    <li> Programmes </li>
     <li> Donate </li>
     <li> Blog </li>
+    <li> Contact Us </li>
     </ul>
 </section>
 
@@ -49,9 +57,51 @@
 
     <section id="programmes">
       <h2> Programmes </h2>
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="./images/1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Street Teams</h5>
+            <p class="card-text">Some information on Street Teams.</p>
+            <p class="card-text"><small class="text-muted">For further details, please contact us.</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./images/2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Skills Workshops</h5>
+          <p class="card-text">Some information on Skills Workshops.</p>
+            <p class="card-text"><small class="text-muted">For further details, please contact us.</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./images/3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Summer Programme</h5>
+        <p class="card-text">Some information on Summer Programmes.</p>
+            <p class="card-text"><small class="text-muted">For further details, please contact us.</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./images/4.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Youth Club</h5>
+        <p class="card-text">Some information on Youth Club.</p>
+            <p class="card-text"><small class="text-muted">For further details, please contact us.</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./images/5.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">One-to-One Programme</h5>
+        <p class="card-text">Some information on the One-to-One Programmes.</p>
+            <p class="card-text"><small class="text-muted">For further details, please contact us.</small></p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="ethos">
+    <section class="section full" id="ethos">
       <h2> Ethos </h2>
     </section>
 
@@ -59,10 +109,15 @@
       <h2> Fundraising </h2>
     </section>
 
-    <section id="footer">
+    <section class"footer open" id="footer">
       <b><p> In Islington, almost half of all children live in poverty. Will you help us change this? </p></b>
       <h6> &copy; Copyright Prospex 2018 <h6>
     </section>
 
   </body>
+
+  <script src="./scripts/nav-toggle.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>
