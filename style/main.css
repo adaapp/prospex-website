@@ -1,4 +1,48 @@
+/* Simple show and hide navigation widget */
 
+.nav-toggle {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.nav-box {
+    position: fixed;
+    top: 3.5rem;
+    background: black;
+    height: 100%;
+    width: 20rem;
+    padding: 3rem;
+    transition: all 0.5s ease;
+}
+
+#programmes h1 {
+    color: red;
+}
+
+.nav-box.closed {
+    right: -20rem;
+}
+
+.nav-box.open {
+    right: 0;
+ }
+
+nav.primary ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.primary a {
+    display: block;
+    font-size: 2rem;
+}
 
 
 /* Donate Widget CSS */
