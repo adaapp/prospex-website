@@ -6,4 +6,3 @@ navToggle.addEventListener('click', toggleClass);
 function toggleClass(){
   navigationBox.classList.toggle('closed')
 }
-$ = document.querySelector
