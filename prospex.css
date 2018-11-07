@@ -1,0 +1,67 @@
+html{zoom:100%}
+
+a{style: none;}
+
+h2{padding-top: 40px; line-height: 6rem;}
+
+body{background-color: #f4b942;font-family: Raleway ;margin: 0px;padding: 0px;border: 0px;}
+
+section{height: calc(100vh);width: 100%;padding-right: 14rem;}
+
+.navigation-box{position: fixed;top: 3.5rem; height: 60vh;width: 15%; right: 0vh;background-color: rgba(0,0,0,.65); padding-top: 1rem; padding-left: 1rem; color: white; transition: all 1s ease;}
+
+.navigation-box a{display:block; line-height: 2rem;}
+
+.navigation-box.closed{position: fixed;top: 3.5rem;right: -40rem;height: 70vh;width: 15%;background-color: rgba(0,0,0,.65); padding-top: 1rem; padding-left: 1rem; color: white;}
+
+.navigation-box.open{position: fixed;top: 3.5rem;right: 0vh;height: 60vh;width: 15%;background-color: rgba(0,0,0,.65); padding-top: 1rem; padding-left: 1rem; color: white;}
+
+.navigation-box-toggle{margin-top: .5rem; margin-right: 0.25rem; padding: 0.5rem;font-size:1rem; right: 1rem; position:fixed; border-style: solid;}
+
+.navigation-box a{color: white; text-decoration: none;}
+
+#fundraising-item{border-right: none;}
+
+#faqs{margin-left: 1.8rem;}
+
+#logo-nav{background-color: white;top: 0px;left: 0px;position: fixed;width: 100%;height: 3.5rem;padding-left: 1rem; z-index: 10;}
+
+.donate-widget{top: calc(88% - 6rem);right: 0;background-color: rgba(0,0,0,.65);height: 3.5rem;width: 15%;position: fixed;display: inline;border-radius: 0 0 0 0; text-align: center;vertical-align: center; z-index: 10;}
+
+.donate-widget a{text-decoration: none;font-size: 1.5rem;line-height: 4rem; color: white; padding-top:0rem;}
+
+#section-nav{margin-top: 6rem;height: calc(100vh - 10rem);width: 100%;text-align: center; padding-right: 0px;}
+
+#section-nav h1{font-size: 60px;}
+
+#section-nav ul{list-style: none; text-align: center; display: flex; height: 12rem; padding-top: 1rem;margin-right: 2rem;}
+
+#section-nav li{display: inline;  padding: 1rem; border-right: solid;}
+
+#section-nav a{text-decoration: none; color: white; font-size: 1.5rem;}
+
+.fundraising-item{border-right: none;}
+
+.accordion {background-color: rgb(252, 177, 0);color: #444;cursor: pointer;padding: 18px;width: 100%;text-align: left;border: none;outline: none;transition: 0.4s;}
+
+.active, .accordion:hover {background-color: rgb(252, 154, 0);}
+
+.panel {padding: 0 18px; background-color: white;display: none;overflow: hidden;}
+
+#bottom-nav{height: 3.5rem;padding-top: 0.8rem;background-color: #f49242; padding-right: 0rem;}
+
+#bottom-nav ul{list-style: none; text-align: center;}
+
+ #bottom-nav li{font-size: 1.2rem;  padding-left: 5rem;  padding-right: 5rem; text-align: center; display: inline;}
+
+#who-we-are{background-color: rgb(252, 200, 0);padding-left: 30px; margin-right:40rem;}
+
+#programmes{background-color: rgb(252, 189, 0);padding-left: 30px;}
+
+#ethos{background-color: rgb(252, 177, 0);padding-left: 30px;}
+
+#fundraising{background-color: rgb(252, 154, 0);padding-left: 30px;}
+
+#footer{height: 8rem;  width: 100%; background-color: rgba(255,255,255);  margin: 0px;  border: 0px;  position: fixed;  display: inline-block;  vertical-align: bottom;  top: calc(100vh - 6.1rem);  text-align: center; padding-right: 0rem;}
+
+#footer p{  padding: .75rem;  line-height: 1rem;  padding-top: 1.1rem;  font-size: 1.2rem;}
