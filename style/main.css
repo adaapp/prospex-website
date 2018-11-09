@@ -1,65 +1,132 @@
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+body {
+    background-color: 201, 215, 253;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 8rem;
+  }
+/* Main website layout */
 
-.donate-widget {
+header {
+    position: fixed;
+    background-color: white;
+    height: 8rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    color: #F5822C;
+}
+
+h1 {
+    color: #F5822C;
+}
+
+main section {
+    margin-bottom: 20rem;   
+}
+
+header #logo-img {
+       width: 40%;
+       margin: auto;
+       display: block;
+}
+
+@media (min-width: 600px) {
+    header #logo-img {
+        width: 30%;
+ }
+}
+
+/* 
+Accessible show and hide nav widget */
+.nav-toggle {
+    display: inline;
+    padding: 1rem;
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    line-height: 1;
+    cursor: pointer;
+    color:#F5822C;
+}
+
+.nav-toggle:hover {
+    color: rgba(5, 5, 5, 0.4);
+}
+
+.nav-box {
+    position: fixed;
+    top: 3.5rem;
+    right: 0;
+    background: black;
+    height: 100%;
+    width: 16rem;
+    padding: 1.5rem;
+    transition: all 1s ease;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.nav-box.open {
+    right: 0;
+}
+
+.nav-box.closed {
+    right: -20rem;
+}
+
+nav.primary-nav ul {
+    color:#F5822C;
+    list-style: none;
+    font-size: 1.5rem;
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav.primary-nav a {
+    color: #F5822C;
+    transition: all 0.5s ease;
+}
+
+nav.primary-nav a:hover {
+    display: block;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+    transition: all 0.5s ease;
+}
+
+.donate-widget {    
     position: fixed;
     top: calc(50% - 2rem);
-    right: 0;
+    left: 0;
+    color: rgba(20, 20, 20, 0.7);
   }
 
 .donate-widget a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.5rem;  
     line-height: 1;
     padding: 1rem;
-    background: rgba(0,0,0,.7);
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 0 6rem 6rem 0;
+    background-color: rgba(20, 20, 20, 0.7); 
 }
 
 .donate-widget a:hover {
     text-decoration: none;
-    background: rgba(150, 150, 150, 150);
+    background: rgba(5, 5, 5, 0.4);
 }
 
-/* Dropdown Button */
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+.btn-primary {
+    background: #F5822C;
+    border: #F5822C;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-    background-color: #f1f1f1;
+a.btn-primary:hover {
+    background:rgba(5, 5, 5, 0.4); 
+
 }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: rgba(0,0,0,0.7);}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: rgba(0,0,0,0.2);}
